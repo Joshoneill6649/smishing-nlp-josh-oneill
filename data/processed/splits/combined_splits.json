@@ -1,0 +1,27 @@
+{
+  "seed": 23315369,
+  "sizes": {
+    "combined": 82221,
+    "train": 57554,
+    "val": 12333,
+    "test": 12334
+  },
+  "counts": {
+    "combined": {
+      "smish": 77706,
+      "ham": 4515
+    },
+    "train": {
+      "smish": 54393,
+      "ham": 3161
+    },
+    "val": {
+      "smish": 11656,
+      "ham": 677
+    },
+    "test": {
+      "smish": 11657,
+      "ham": 677
+    }
+  }
+}

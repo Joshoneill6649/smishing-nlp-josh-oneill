@@ -1,0 +1,15 @@
+import pandas as pd
+df = pd.read_parquet("data/processed/combined.parquet")
+print("Rows:", len(df), "| Columns:", list(df.columns))
+print("\nHead:")
+print(df.head(20)[["text","label","source"]])
+
+
+import pandas as pd, os
+p="data/processed/non_english_dropped.parquet"
+print("Exists?", os.path.exists(p))
+if os.path.exists(p):
+    d=pd.read_parquet(p)
+    print("Dropped N:", len(d))
+    print(d['source'].value_counts().head())
+    print(d.sample(min(20,len(d)), random_state=0)[['text','source']])

@@ -1,0 +1,8 @@
+import pandas as pd, json
+splits = {}
+for split in ["train","val","test"]:
+    df = pd.read_parquet(f"data/processed/{split}.parquet")
+    splits[split] = df["text_hash"].tolist()
+with open("data/processed/splits/hashes_per_split.json","w") as f:
+    json.dump(splits, f)
+print("Saved hashes for exact reproducibility.")
