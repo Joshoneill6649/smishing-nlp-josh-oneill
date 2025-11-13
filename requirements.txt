@@ -7,3 +7,7 @@ scikit-learn==1.5.2
 pandas==2.2.2
 pyarrow==16.1.0
 numpy==1.26.4
+matplotlib
+joblib
+langid
+tqdm
