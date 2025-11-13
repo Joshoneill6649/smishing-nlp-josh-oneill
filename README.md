@@ -1,4 +1,4 @@
-Pulling down the folder and installing dependecies 
+Pulling down the folder and installing dependencies 
 
 
 ==============================================================================
