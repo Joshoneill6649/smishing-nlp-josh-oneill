@@ -1,4 +1,26 @@
-Project run order 
+Pulling down the folder and installing dependecies 
+
+bash
+# From a terminal
+cd ~/Desktop    # or any folder you prefer
+git clone https://github.com/Joshoneill6649/smishing-nlp-josh-oneill.git
+cd smishing-nlp-josh-oneill
+
+Mac/Linux
+python3 -m venv smishing_msc_env
+source smishing_msc_env/bin/activate  
+
+windows 
+python -m venv smishing_msc_env
+.\smishing_msc_env\Scripts\activate
+
+Install depdencies 
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+
+If PyTorch complains about the Python version, install Python 3.11 and repeat the steps above.
+
+Project run order for scripts 
 
 1)normalize_merge_english.py
 
