@@ -1,22 +1,29 @@
 Pulling down the folder and installing dependecies 
 
-bash
-# From a terminal
-cd ~/Desktop    # or any folder you prefer
+
+==============================================================================
+requirements 
+
+Python 3.10 or later
+Git
+A GPU is recommended but the code will also run on CPU (it will just be slower)
+================================================================================
+Clone respository 
+
 git clone https://github.com/Joshoneill6649/smishing-nlp-josh-oneill.git
 cd smishing-nlp-josh-oneill
+================================================================================
+create and activate virtual enviroment 
 
-Mac/Linux
-python3 -m venv smishing_msc_env
-source smishing_msc_env/bin/activate  
+python -m venv smishing_msc_win
+smishing_msc_win\Scripts\activate
+===============================================================================
+Install dependencies 
 
-windows 
-python -m venv smishing_msc_env
-.\smishing_msc_env\Scripts\activate
+pip install --upgrade pip
+pip install -r requirements.txt
+=================================================================================
 
-Install depdencies 
-python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
 
 If PyTorch complains about the Python version, install Python 3.11 and repeat the steps above.
 
@@ -47,7 +54,7 @@ Project run order for scripts
 12)overall_evaluation.py
 
 
-run command line prediction on a message : predict_message.py
+run command line prediction on a message : predict_message.py ( needs trained models to work )
 
 user_profiles.py and text_preprocess.py are helpers
 
