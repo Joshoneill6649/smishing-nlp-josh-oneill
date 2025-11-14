@@ -10,7 +10,8 @@ Create and activate virtual enviroment
 python -m venv smishing_msc_win smishing_msc_win\Scripts\activate
 
 Install dependencies
-pip install --upgrade pip pip install -r requirements.txt
+pip install --upgrade pip
+pip install -r requirements.txt
 
 
 Install dependencies
