@@ -12,10 +12,10 @@ Create and activate virtual environment
 ======================================================================================
 python -m venv smishing_msc_win
 
-# Activate on Windows PowerShell
+Activate on Windows PowerShell
 .\smishing_msc_win\Scripts\Activate.ps1
 
-# Activate on Windows cmd
+Activate on Windows cmd
 smishing_msc_win\Scripts\activate.bat
 
 
