@@ -1,29 +1,35 @@
 Pulling down the folder and installing dependencies 
+================================================================
 
-Python 3.10 or later Git A GPU is recommended but the code will also run on CPU
 
-Clone respository
-Git clone https://github.com/Joshoneill6649/smishing-nlp-josh-oneill.git 
+Clone repository
+======================================================================================
+git clone https://github.com/Joshoneill6649/smishing-nlp-josh-oneill.git
 cd smishing-nlp-josh-oneill
 
-Create and activate virtual enviroment
-python -m venv smishing_msc_win smishing_msc_win\Scripts\activate
+
+Create and activate virtual environment
+======================================================================================
+python -m venv smishing_msc_win
+
+# Activate on Windows PowerShell
+.\smishing_msc_win\Scripts\Activate.ps1
+
+# Activate on Windows cmd
+smishing_msc_win\Scripts\activate.bat
+
 
 Install dependencies
+======================================================================================
 pip install --upgrade pip
 pip install -r requirements.txt
 
-
-Install dependencies
-pip install -r requirements.txt
-
-
 If PyTorch complains about the Python version, install Python 3.11 and repeat the steps above.
-
-Project run order for scripts 
+Python 3.10 or later Git A GPU is recommended but the code will also run on CPU
 
 
 File running order
+===============================================
 1 scripts/normalize_merge_english.py
 2	scripts/split.py
 3	scripts/run_baselines.py
